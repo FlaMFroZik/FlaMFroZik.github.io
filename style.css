@@ -13,8 +13,8 @@ body {
 }
 
 .row {
-    position: fixed; /* ← ПРИКЛЕИВАЕМ К ЭКРАНУ */
-    top: 0; /* ← ПРИЖИМАЕМ К ВЕРХУ */
+    position: fixed;
+    top: 0;
     left: 0;
     z-index: 1000;
     display: inline-block;
@@ -34,9 +34,9 @@ body {
     transition: background 0.3s ease, transform 0.15s ease, box-shadow 0.15s ease; /* ← АНИМАЦИЯ */
     cursor: pointer;
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Edge */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     font-family: Comic Sans MS, Comic Sans, cursive;
     text-align: center;
 }
@@ -45,7 +45,6 @@ body {
         border-right: none;
     }
 
-    /* ПРИ НАВЕДЕНИИ (для красоты) */
     .block:hover {
         background: #f8f9fa;
     }
