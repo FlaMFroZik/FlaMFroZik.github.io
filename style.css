@@ -1,0 +1,63 @@
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+}
+
+.row {
+    position: fixed; /* ← ПРИКЛЕИВАЕМ К ЭКРАНУ */
+    top: 0; /* ← ПРИЖИМАЕМ К ВЕРХУ */
+    left: 0;
+    z-index: 1000;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0;
+    background: white;
+    border: 2px solid #ccc;
+}
+
+.block {
+    display: inline-block;
+    padding: 5px;
+    width: 33vw;
+    border-right: 2px solid #ccc;
+    font-size: 16px;
+    background: white;
+    transition: background 0.3s ease, transform 0.15s ease, box-shadow 0.15s ease; /* ← АНИМАЦИЯ */
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Edge */
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+}
+
+    .block:last-child {
+        border-right: none;
+    }
+
+    /* ПРИ НАВЕДЕНИИ (для красоты) */
+    .block:hover {
+        background: #f8f9fa;
+    }
+    .block:active {
+        background-color: lightgray;
+        transform: scale(0.95);
+    }
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 0px 25px;
+}
